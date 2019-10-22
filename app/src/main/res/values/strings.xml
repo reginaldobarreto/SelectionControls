@@ -3,6 +3,10 @@
     <string name="checkTitle">Notification</string>
     <string name="componente_switch">Switch</string>
     <string name="componente_check">Checkbox</string>
+    <string name="componente_radiogroup">Radio Group</string>
     <string name="checkOn">Check On</string>
     <string name="checkOff">Check Off</string>
+    <string name="option_one">Option One</string>
+    <string name="option_two">Option Two</string>
+    <string name="option_three">Option Three</string>
 </resources>
