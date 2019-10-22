@@ -4,15 +4,26 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:padding="16dp"
     tools:context=".MainActivity">
 
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/componente_switch"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal|center" />
 
     <androidx.appcompat.widget.SwitchCompat
+        android:layout_marginTop="15dp"
         android:id="@+id/switchControl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Liga/Desliga" />
+        android:text="@string/checkTitle"
+        android:layout_gravity="center_horizontal|center" />
+
+
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>

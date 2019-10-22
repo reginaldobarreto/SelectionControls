@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Selection Controls</string>
+    <string name="checkTitle">Notification</string>
+    <string name="componente_switch">Switch</string>
+    <string name="checkOn">Check On</string>
+    <string name="checkOff">Check Off</string>
 </resources>
