@@ -5,6 +5,7 @@ import androidx.appcompat.widget.SwitchCompat;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.CheckBox;
 import android.widget.CompoundButton;
 import android.widget.Toast;
 
@@ -16,6 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     @BindView(R.id.switchControl)
     SwitchCompat switchCompat;
+    @BindView(R.id.checkBoxControl)
+    CheckBox checkBox;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +29,17 @@ public class MainActivity extends AppCompatActivity {
 
 
         switchCompat.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if (isChecked){
+                    Toast.makeText(getApplicationContext(),R.string.checkOn,Toast.LENGTH_LONG).show();
+                }else {
+                    Toast.makeText(getApplicationContext(),R.string.checkOff,Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
                 if (isChecked){
