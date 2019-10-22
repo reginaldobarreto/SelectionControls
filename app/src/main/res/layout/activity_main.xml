@@ -12,18 +12,29 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/componente_switch"
-        android:layout_marginTop="10dp"
-        android:layout_gravity="center_horizontal|center" />
+        android:layout_marginTop="10dp" />
 
     <androidx.appcompat.widget.SwitchCompat
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="10dp"
         android:id="@+id/switchControl"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="@string/checkTitle" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/componente_check"
+        android:layout_marginTop="30dp" />
+
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkBoxControl"
+        android:layout_width="wrap_content"
         android:text="@string/checkTitle"
-        android:layout_gravity="center_horizontal|center" />
-
-
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"/>
 
 
 </androidx.appcompat.widget.LinearLayoutCompat>
