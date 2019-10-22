@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+import android.widget.RadioGroup;
 import android.widget.Toast;
 
 import butterknife.BindView;
@@ -19,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
     SwitchCompat switchCompat;
     @BindView(R.id.checkBoxControl)
     CheckBox checkBox;
+    @BindView(R.id.radioGroup)
+    RadioGroup radioGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +52,25 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+
+        radioGroup.setOnCheckedChangeListener(new RadioGroup.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(RadioGroup group, int checkedId) {
+                switch (checkedId){
+                    case R.id.optionOne:
+                        Toast.makeText(getApplicationContext(),R.string.option_one,Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.optionTwo:
+                        Toast.makeText(getApplicationContext(),R.string.option_two,Toast.LENGTH_LONG).show();
+                        break;
+                    case R.id.optionThree:
+                        Toast.makeText(getApplicationContext(),R.string.option_three,Toast.LENGTH_LONG).show();
+                        break;
+                }
+            }
+        });
+
 
     }
 }

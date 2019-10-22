@@ -49,16 +49,19 @@
         android:animateLayoutChanges="true">
 
         <RadioButton
+            android:id="@+id/optionOne"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/option_one"
             />
         <RadioButton
+            android:id="@+id/optionTwo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/option_two"
             />
         <RadioButton
+            android:id="@+id/optionThree"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/option_three"
